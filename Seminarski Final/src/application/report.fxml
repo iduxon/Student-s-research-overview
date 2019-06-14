@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" prefHeight="320.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main">
+   <children>
+      <Pane fx:id="welcomePane" onMouseEntered="#ImePrezime" prefHeight="402.0" prefWidth="550.0">
+         <children>
+            <Button fx:id="logout" layoutX="438.0" layoutY="256.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="80.0" text="Odjavi se" />
+            <Label fx:id="IzaberiRad" layoutX="28.0" layoutY="15.0" text="Izaberite rad koji zelite da pregledate :" />
+            <ChoiceBox fx:id="Radovi" layoutX="28.0" layoutY="46.0" prefWidth="150.0" />
+            <Button fx:id="UcitajRadove" layoutX="184.0" layoutY="46.0" mnemonicParsing="false" onAction="#setItems" prefHeight="25.0" prefWidth="91.0" text="Ucitaj radove" />
+            <ListView fx:id="PregledRadova" layoutX="28.0" layoutY="86.0" prefHeight="160.0" prefWidth="247.0" />
+            <Button fx:id="Report" layoutX="28.0" layoutY="256.0" mnemonicParsing="false" onAction="#setReports" prefHeight="25.0" prefWidth="111.0" text="Prikazi podatke" />
+            <Label fx:id="Korisnik" layoutX="353.0" layoutY="6.0" prefHeight="17.0" prefWidth="48.0" text="Korisnik :" />
+            <Label fx:id="ImeiPrezime" layoutX="403.0" layoutY="6.0" prefHeight="17.0" prefWidth="135.0" />
+            <Label fx:id="Studenti" layoutX="284.0" layoutY="86.0" prefHeight="17.0" prefWidth="55.0" text="Studenti" />
+            <Label fx:id="Nazivkonferencije" layoutX="284.0" layoutY="112.0" prefHeight="17.0" prefWidth="111.0" text="Naziv konferencije" />
+            <Label fx:id="ImeiPrezProf" layoutX="284.0" layoutY="138.0" prefHeight="17.0" prefWidth="72.0" text="Profesor/ka" />
+            <Label fx:id="Nazivpredmeta" layoutX="284.0" layoutY="162.0" prefHeight="17.0" prefWidth="55.0" text="Predmet" />
+            <Label fx:id="Datumkonferencije" layoutX="284.0" layoutY="188.0" prefHeight="17.0" prefWidth="111.0" text="Datum konferencije" />
+            <Label fx:id="Opisrada" layoutX="284.0" layoutY="215.0" prefHeight="17.0" prefWidth="72.0" text="Opis rada" />
+             <Label fx:id="GreskaStudent" layoutX="160.0" layoutY="256.0" prefHeight="17.0" prefWidth="200.0" text="" />
+         </children></Pane>
+   </children>
+</AnchorPane>
